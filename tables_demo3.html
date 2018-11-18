@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Tables Demo Three</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="text-center">Uganda Super League(2018)</h4>
+        <table class="display cell-border">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Team</th>
+                    <th>GP</th>
+                    <th>PTS</th>
+                    <th>REB</th>
+                    <th>AST</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('.display').DataTable({
+
+                'ajax': {
+                    'url': 'super_league.json',
+                    'dataSrc': ''
+                },
+                'columns': [{
+                        'data': 'Player'
+                    },
+                    {
+                        'data': 'Team'
+                    },
+                    {
+                        'data': 'GP'
+                    },
+                    {
+                        'data': 'PTS'
+                    },
+                    {
+                        'data': 'REB'
+                    },
+                    {
+                        'data': 'AST'
+                    },
+                ],
+                'order': [
+                    [3, 'desc']
+                ],
+                'dom': 'Bfrtip',
+                'buttons': [
+                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+                ],
+                'columnDefs': [{
+                    targets: [-1, -3],
+                    className: 'dt-body-right',
+                    visible: true
+                }]
+            });
+        });
+    </script>
+</body>
+
+</html>

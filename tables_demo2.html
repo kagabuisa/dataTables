@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Tables Demo Two</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="text-center">Uganda Super League(2018)</h4>
+        <table data-toggle="table" data-url="super_league.json" data-search="true" data-pagination="true"
+            data-show-columns="true" data-detail-view="true" data-detail-formatter="PPG">
+            <thead>
+                <tr>
+                    <th data-field="Player" data-sortable="true">Player</th>
+                    <th data-field="Team" data-sortable="true">Team</th>
+                    <th data-field="GP" data-sortable="true">GP</th>
+                    <th data-field="PTS" data-sortable="true">PTS</th>
+                    <th data-field="REB" data-sortable="true">REB</th>
+                    <th data-field="AST" data-sortable="true">AST</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+
+    <script>
+        function PPG(index, row) {
+            return row['Player'] + 'averaged' + (row['PTS'] / row['GP'] + ' points per game.')
+        }
+    </script>
+
+</body>
+
+</html>
