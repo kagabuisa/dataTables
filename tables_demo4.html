@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <h4 class="text-center">Datatable Demo four</h4>
-        <table class="display">
+        <table id="example" class="display">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -42,11 +42,10 @@
     <script src="js/datatables.min.js"></script>
     <script>
         $('document').ready(function () {
-            $('.display').DataTable({
-                "ajax": {
-                    "url": "people.json",
-                    "dataSrc": ""
-                },
+            //"example" in ('#example') is the table id, this is declared under table class
+            $('#example').DataTable({
+                "ajax": "people.json",
+                "dataSrc": "",
                 "columns": [{
                         "data": "name"
                     },
