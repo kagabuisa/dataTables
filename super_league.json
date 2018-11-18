@@ -1,0 +1,113 @@
+[{
+        "Player": "Russel Westbrook",
+        "Team": "OKC",
+        "GP": 81,
+        "PTS": 8892,
+        "REB": 856,
+        "AST": 841
+    },
+    {
+        "Player": "Muhangi Megar",
+        "Team": "KCCA",
+        "GP": 25,
+        "PTS": 892,
+        "REB": 256,
+        "AST": 81
+    },
+    {
+        "Player": "Milton Mutyabule",
+        "Team": "KCCA",
+        "GP": 35,
+        "PTS": 5892,
+        "REB": 56,
+        "AST": 801
+    },
+    {
+        "Player": "Kiguli Ahmed",
+        "Team": "KCCA",
+        "GP": 45,
+        "PTS": 8092,
+        "REB": 2586,
+        "AST": 31
+    },
+    {
+        "Player": "Hassan Wasswa",
+        "Team": "Villa FC",
+        "GP": 125,
+        "PTS": 352,
+        "REB": 111,
+        "AST": 51
+    },
+    {
+        "Player": "Mulindwa Faisal",
+        "Team": "Villa FC",
+        "GP": 225,
+        "PTS": 1352,
+        "REB": 1011,
+        "AST": 86
+    },
+    {
+        "Player": "Katerega Ali",
+        "Team": "Villa FC",
+        "GP": 125,
+        "PTS": 152,
+        "REB": 101,
+        "AST": 87
+    },
+    {
+        "Player": "Kityo Japhar Faisal",
+        "Team": "Villa FC",
+        "GP": 1125,
+        "PTS": 152,
+        "REB": 211,
+        "AST": 122
+    },
+    {
+        "Player": "Mula Faisal",
+        "Team": "Vipers FC",
+        "GP": 225,
+        "PTS": 12,
+        "REB": 91,
+        "AST": 116
+    },
+    {
+        "Player": "Baba John",
+        "Team": "Vipers FC",
+        "GP": 221,
+        "PTS": 112,
+        "REB": 191,
+        "AST": 1056
+    },
+    {
+        "Player": "Massa Geofrey",
+        "Team": "Vipers FC",
+        "GP": 15,
+        "PTS": 32,
+        "REB": 500,
+        "AST": 10
+    },
+    {
+        "Player": "Hassan Mia",
+        "Team": "Onduparaka FC",
+        "GP": 1225,
+        "PTS": 112,
+        "REB": 151,
+        "AST": 116
+    },
+    {
+        "Player": "Ian Rooney",
+        "Team": "Onduparaka FC",
+        "GP": 22,
+        "PTS": 151,
+        "REB": 81,
+        "AST": 12
+    },
+    {
+        "Player": "Ijosia Toha",
+        "Team": "Onduparaka FC",
+        "GP": 225,
+        "PTS": 11,
+        "REB": 51,
+        "AST": 160
+    }
+]
