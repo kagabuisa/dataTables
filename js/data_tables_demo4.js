@@ -23,7 +23,8 @@ $('document').ready(function () {
             }
         ],
         "dom": "Bftrip",
-        "buttons": ['copy', 'csv', 'excel', 'pdf', 'print']
+        "buttons": ['excel', 'pdf', 'print']
+
     });
 
 });
