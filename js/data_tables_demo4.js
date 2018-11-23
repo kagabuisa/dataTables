@@ -1,25 +1,46 @@
 $('document').ready(function () {
     //"example" in ('#example') is the table id, this is declared under table class
     $('#example').DataTable({
-        "ajax": "people.json",
+        "ajax": "json-ajax.json",
         "dataSrc": "",
         "columns": [{
-                "data": "name"
+                "data": "CREATED_AT"
             },
             {
-                "data": "position"
+                "data": "SOURCE"
             },
             {
-                "data": "office"
+                "data": "NAME"
             },
             {
-                "data": "extn"
+                "data": "CITY"
             },
             {
-                "data": "start_date"
+                "data": "BIRTH_DATE"
             },
             {
-                "data": "salary"
+                "data": "LATITUDE"
+            },
+            {
+                "data": "ZIP"
+            },
+            {
+                "data": "PASSWORD"
+            },
+            {
+                "data": "ID"
+            },
+            {
+                "data": "LONGITUDE"
+            },
+            {
+                "data": "ADDRESS"
+            },
+            {
+                "data": "STATE"
+            },
+            {
+                "data": "EMAIL"
             }
         ],
         "dom": "Bftrip",
