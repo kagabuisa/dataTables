@@ -24,7 +24,7 @@ $('document').ready(function () {
 
 
         ],
-        //"dom": "Bftrip",
+        "dom": "Bftrip",
         //"buttons": ['excel', 'pdf', 'print']
 
     });
