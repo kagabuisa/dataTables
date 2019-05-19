@@ -1,30 +1,28 @@
 $('document').ready(function () {
     //"example" in ('#example') is the table id, this is declared under table class
     $('#example').DataTable({
-        "ajax": "JSON/Margins-report.json",
-        "dataSrc": "",
+        "processing": true,
+        "serverSide": false,
+        "ajax": {
+            "url":"http://localhost/phprestapi/api/post/read.php"},
+            
         "columns": [{
-                "data": "Date"
+                "data": "id"
             },
             {
-                "data": "CSTG"
+                "data": "firstName"
             },
             {
-                "data": "Sales"
+                "data": "surName"
             },
             {
-                "data": "COGs"
+                "data": "dob"
             },
             {
-                "data": "Profit"
-            },
-            {
-                "data": "Margin"
+                "data": "email"
             }
-
-
         ],
-        "dom": "Bftrip",
+        // "dom": "Bftrip",
         //"buttons": ['excel', 'pdf', 'print']
 
     });
